@@ -168,7 +168,7 @@ LOOP:		//Listado de Estados
 	
 	CPI		ESTADO, 6
 	BREQ	ESTADO6PASO
-	CPI		ESTADO, 7
+	CPI		ESTADO, 7S
 	BREQ	ESTADO7PASO
 	CPI		ESTADO, 8
 	BREQ	ESTADO8PASO
@@ -2101,7 +2101,6 @@ END_ISR10:
 //-------------------------------------------------
 
 
-// ESTE DEBERIA DE SER EL 7
 ESTADO12_ISR:
 
 	STS 0x0141, COUNTER
